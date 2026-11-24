@@ -1,0 +1,39 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, sans-serif; background: #f2f5ff; color: #16213a; }
+header { background: #16294d; color: white; padding: 20px 16px 14px; text-align: center; }
+header h1 { margin: 0; font-size: 34px; }
+.tagline { margin: 4px 0 8px; opacity: 0.9; }
+.net { margin: 0; font-size: 13px; background: #1e7a4c; display: inline-block; padding: 4px 10px; border-radius: 20px; }
+main { max-width: 520px; margin: 0 auto; padding: 14px 12px 40px; }
+.card { background: white; border-radius: 16px; padding: 16px; margin-bottom: 14px; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
+h2 { margin: 0 0 10px; font-size: 20px; }
+.label { display: block; font-size: 13px; color: #5a6b8a; }
+.big-amount { font-size: 42px; font-weight: 800; color: #c0392b; }
+.totals-row { display: flex; justify-content: space-between; margin-top: 8px; font-size: 15px; }
+.mic-card { text-align: center; }
+.hint { color: #5a6b8a; font-size: 15px; }
+.mic-btn { width: 140px; height: 140px; border-radius: 50%; border: none; background: #e74c3c; color: white; font-size: 22px; font-weight: 800; cursor: pointer; margin: 10px 0; }
+.mic-btn.listening { background: #1e7a4c; animation: pulse 1s infinite; }
+@keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.07); } 100% { transform: scale(1); } }
+.status { font-weight: 700; }
+.heard-label { margin: 10px 0 0; font-size: 13px; color: #5a6b8a; }
+.heard { font-size: 19px; font-weight: 700; background: #fff7e6; padding: 10px; border-radius: 10px; min-height: 44px; }
+.reply { font-size: 18px; background: #eef4ff; padding: 12px; border-radius: 10px; min-height: 52px; }
+.hidden { display: none; }
+.confirm-card { border: 3px solid #f0b429; }
+.confirm-text { font-size: 22px; font-weight: 800; }
+.btn-row { display: flex; gap: 10px; }
+.btn { border: none; border-radius: 12px; padding: 14px 16px; font-size: 17px; font-weight: 800; cursor: pointer; flex: 1; }
+.btn.yes { background: #1e7a4c; color: white; }
+.btn.no { background: #c0392b; color: white; }
+.btn.small { flex: none; background: #e5e8f0; color: #16213a; font-size: 14px; margin-top: 10px; }
+.demo-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.demo-btn { background: #eef4ff; border: 1px solid #bcd0ff; border-radius: 20px; padding: 10px 12px; font-size: 14px; cursor: pointer; }
+.ledger-item { border-bottom: 1px solid #eee; padding: 12px 0; }
+.ledger-item:last-child { border-bottom: none; }
+.ledger-top { display: flex; justify-content: space-between; font-size: 20px; font-weight: 800; }
+.amount-due { color: #c0392b; }
+.ledger-sub { color: #5a6b8a; font-size: 14px; margin-top: 4px; }
+.reminder { background: #f6fff8; border: 1px solid #bfe8cc; border-radius: 10px; padding: 10px; margin-bottom: 8px; font-size: 15px; }
+input, select { width: 100%; padding: 13px; margin-bottom: 10px; font-size: 17px; border: 2px solid #d5dcef; border-radius: 10px; }
+.footer { text-align: center; color: #5a6b8a; font-size: 13px; }

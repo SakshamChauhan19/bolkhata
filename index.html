@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BolKhata - Bolte Jao, Khata Banta Jao</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>BolKhata</h1>
+<p class="tagline">Bolte jao, khata banta jao</p>
+<p id="netStatus" class="net">Online - sab save hoga</p>
+</header>
+<main>
+<section class="card total-card">
+<div><span class="label">Kul Baaki (sab customers)</span><span id="grandTotal" class="big-amount">₹0</span></div>
+<div class="totals-row"><span>Aaj ka udhaar: <b id="todayTotal">₹0</b></span><span>Aaj payment: <b id="todayPaid">₹0</b></span></div>
+</section>
+
+<section class="card mic-card">
+<h2>Bolo, likhna nahi hai</h2>
+<p class="hint">Mic dabao, phir bolo. Jaise:<br><b>"Ramesh ko 2 kilo atta, 90 rupaye udhaar"</b></p>
+<button id="micBtn" class="mic-btn">🎙️ Bolo</button>
+<p id="listenStatus" class="status">Mic band hai. Bolo shuru karne ke liye dabao.</p>
+<p class="heard-label">Jo suna gaya:</p>
+<p id="heardText" class="heard">—</p>
+<p id="appReply" class="reply">Main yahan jawab bolkar aur likhkar dikhaunga.</p>
+</section>
+
+<section id="confirmCard" class="card confirm-card hidden">
+<h2>Confirm karo</h2>
+<p id="confirmText" class="confirm-text"></p>
+<p class="hint">Sahi hai to Haan bolo ya dabao. Galat hai to Nahi bolo.</p>
+<div class="btn-row">
+<button id="yesBtn" class="btn yes">Haan, Sahi Hai</button>
+<button id="noBtn" class="btn no">Nahi, Galat Hai</button>
+</div>
+</section>
+
+<section class="card">
+<h2>Demo: bina mic ke try karo</h2>
+<p class="hint">Inme se ek dabao, app waise hi kaam karega jaise tumne bola ho.</p>
+<div class="demo-row">
+<button class="demo-btn" data-say="Ramesh ko 2 kilo atta, 90 rupaye udhaar">Ramesh - 90 udhaar</button>
+<button class="demo-btn" data-say="Ramesh ne 500 rupaye de diye">Ramesh - 500 payment</button>
+<button class="demo-btn" data-say="Ramesh ka total kitna hai">Ramesh ka total?</button>
+<button class="demo-btn" data-say="Aaj ka udhaar batao">Aaj ka udhaar batao</button>
+<button class="demo-btn" data-say="Rakesh ko 1 kilo chini, 45 rupaye udhaar">Rakesh - 45 udhaar</button>
+</div>
+</section>
+
+<section class="card">
+<h2>Khata - sabse zyada baaki pehle</h2>
+<div id="ledger"></div>
+</section>
+
+<section class="card">
+<h2>Subah ke reminders</h2>
+<p class="hint">Har customer ko ye Hindi message bhej sakte ho.</p>
+<div id="reminders"></div>
+</section>
+
+<section class="card">
+<h2>Manual entry (agar mic na chale)</h2>
+<form id="manualForm">
+<input id="mName" placeholder="Customer ka naam - jaise Ramesh" required>
+<input id="mItem" placeholder="Item - jaise 2 kilo atta">
+<input id="mAmount" type="number" placeholder="Amount - jaise 90" required>
+<select id="mType"><option value="udhaar">Udhaar</option><option value="payment">Payment mila</option></select>
+<button class="btn yes" type="submit">Save karo</button>
+</form>
+<button id="resetBtn" class="btn small">Reset demo data</button>
+</section>
+
+<p class="footer">BolKhata prototype v1. Voice pehle, typing baad me.</p>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
